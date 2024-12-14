@@ -1,0 +1,33 @@
+{
+  "name": "@getpromptable/core",
+  "version": "1.0.1",
+  "description": "A simple, easy-to-use, and powerful API for the Promptable API.",
+  "scripts": {
+    "build": "tsup ./src"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "homepage": "http://getpromptable.com",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "keywords": [],
+  "author": "ptrtht",
+  "license": "NCSA",
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "openai": "^4.76.1"
+  }
+}
